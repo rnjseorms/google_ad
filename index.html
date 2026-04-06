@@ -1008,6 +1008,9 @@
       document.getElementById('step-label').textContent = '완료';
       document.getElementById('step-counter').textContent = '신청 완료';
       window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Google Ads 전환 이벤트 전송
+      gtag('event', 'conversion', {'send_to': 'AW-17391154882/Kg-kCJKuxZYcEMLt3-RA'});
     }
 
     if (APPS_SCRIPT_URL && APPS_SCRIPT_URL !== 'YOUR_APPS_SCRIPT_URL_HERE') {
